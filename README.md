@@ -18,4 +18,4 @@
 
 9. Check your address (0xa41B6af0e5a3611E3694eE14EcEFeA85AD0cCADD) on https://mumbai.polygonscan.com/
 
-10. Write a script to interact with your contract.
+10. Write a script to interact with your contract -> `scripts/greet.js`
