@@ -23,6 +23,10 @@ module.exports = {
     mumbai: {
       url: process.env.ALCHEMY_URL,
       accounts: [process.env.PRIVATE_KEY],
+    },
+    matic: {
+      url: process.env.MATIC_URL,
+      accounts: [process.env.PRIVATE_KEY],
     }
   }
 };
