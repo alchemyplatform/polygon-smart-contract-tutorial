@@ -21,7 +21,7 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     mumbai: {
-      url: process.env.ALCHEMY_URL,
+      url: process.env.API_URL,
       accounts: [process.env.PRIVATE_KEY],
     },
     matic: {
