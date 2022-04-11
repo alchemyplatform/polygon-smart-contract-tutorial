@@ -1,7 +1,8 @@
 # How to Code, Deploy, and Interact with a Polygon (MATIC) Smart Contract
 
-Follow the full written tutorial here: https://docs.alchemy.com/alchemy/tutorials/how-to-code-and-deploy-a-polygon-smart-contract
-Follow the full video tutorial here: (TBD)
+Follow the full written tutorial [here](https://docs.alchemy.com/alchemy/tutorials/how-to-code-and-deploy-a-polygon-smart-contract).
+
+Follow the full video tutorial here.
 
 ## Quickstart
 
