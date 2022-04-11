@@ -1,23 +1,14 @@
-1. `npm init --yes`
+# How to Code, Deploy, and Interact with a Polygon (MATIC) Smart Contract
 
-2. `npm install --save-dev hardhat` 
+## Quickstart
 
-3. add `node_modules` and `.env` to `.gitignore` file
-
-4. `npx hardhat` -> sample project
-
-5. in hardhat.config.js -> add mumbai network -> use alchemy rpc + metamask private key
-
-6. `npx hardhat run scripts/sample-script.js` -> errors bc `ERR_INVALID_URL` (didn't save alchemy url string correctly) -> fix
-
-6. `npx hardhat run scripts/sample-script.js` -> error due to `INSUFFICIENT_FUNDS` (no mumbai MATIC)
-
-7. get mumbai testnet eth from https://mumbaifaucet.com/
-
-8. `npx hardhat run scripts/sample-script.js` -> deploys successfully and logs the contract address to console
-
-9. Check your address (0xa41B6af0e5a3611E3694eE14EcEFeA85AD0cCADD) on https://mumbai.polygonscan.com/
-
-10. Write a script to interact with your contract -> `scripts/greet.js`
-
-11. Deploy to Polygon Matic Mainnet -> add matic mainnet network config to `hardhat.config.js`
+1. `npm install`
+2. Rename `.env-example` to `.env`, and populate the variable values.
+  1. Grab `API_URL` from [www.alchemy.com](https://alchemy.com/?a=polygon-smart-contract) by setting up a Polygon Mumbai testnet app.
+  2. For `PRIVATE_KEY`, use your Ethereum wallet address's corresponding private key.
+  3. You can leave `CONTRACT_ADDRESS` blank until you deploy with `npx run scripts/sample-script.js`, then grab the address where you deployed your contract to.
+  4. `ALCHEMY_API_KEY` is very similar to `API_URL` except you can remove the http or ws prefix.
+  5. `MATIC_URL` you can grab from [www.alchemy.com](https://alchemy.com/?a=polygon-smart-contract) but make sure your Alchemy app is a Polygon Mainnet app.
+3. run `npx run scripts/sample-script.js --network mumbai` to deploy your contract to Mumbai testnet
+4. run `npx run scripts/greet.js --network mumbai` to modify blockchain state by calling the Greet function on your smart contract.
+5. Repeat those steps with `--network matic` to deploy and interact on Polygon (MATIC) mainnet chain. 
